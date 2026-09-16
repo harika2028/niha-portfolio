@@ -2245,3 +2245,111 @@ header {
     border-radius: 8px;
     font-weight: 600;
 }
+/* ===== VIEW RESUME BUTTON ===== */
+.hero-buttons .btn {
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+    }
+}
+/* =========================
+   FACECHAIN PROJECT BUTTONS
+========================= */
+
+.project-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.project-buttons .project-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 15px;
+
+    border: 1px solid var(--border-pink);
+    border-radius: 50px;
+
+    background: var(--soft-pink);
+    color: var(--deep-pink);
+
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.project-buttons .project-link:hover {
+    transform: translateY(-3px);
+
+    background: var(--baby-pink);
+
+    box-shadow:
+        0 8px 20px rgba(201, 95, 141, 0.15);
+}
+
+
+/* FaceChain project icon */
+
+.project-card:last-child .project-icon {
+    background:
+        linear-gradient(
+            135deg,
+            var(--soft-pink),
+            #ffffff
+        );
+
+    border: 1px solid var(--border-pink);
+
+    box-shadow:
+        inset 0 0 20px rgba(232, 137, 173, 0.10);
+}
+
+
+/* FaceChain technology tags */
+
+.project-card:last-child .project-tech span {
+    background: #fffafb;
+}
+
+
+/* Mobile adjustment */
+
+@media (max-width: 600px) {
+
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .project-buttons .project-link {
+        width: 100%;
+    }
+
+}
