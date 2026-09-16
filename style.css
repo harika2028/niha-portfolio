@@ -2335,7 +2335,8 @@ header {
 
 /* FaceChain technology tags */
 
-.project-card:last-child .project-tech span {
+/* FaceChain technology tags */
+.facechain-card .project-tech span {
     background: #251837;
 }
 
